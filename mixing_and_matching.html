@@ -2,29 +2,38 @@
 <html>
   <head>
     <style>
-      .top-red {
+      body {
+        margin: 0;
+      }
+      .block {
         display: inline-block;
-        background-color: red;
+        background-color: black;
         height: 100px;
         width: 100px;
-        margin-left: 50px;
+        margin: 50px 0 50px 50px;
         margin-top: 50px;
       }
-      .bottom-blue {
-        display: inline-block;
+      .block-continer {
+        height: 200px;
+        width: 350px;
+      }
+      #top-block-container {
+        background-color: red;
+      }
+      #bottom-block-container {
         background-color: blue;
-        height: 100px;
-        width: 100px;
-        margin-left: 50px;
-        margin-top: 50px;
       }
     </style>
   </head>
 
   <body>
-    <div class="top-red"></div>
-    <div class="top-red"></div>
-    <div class="bottom-blue"></div>
-    <div class="bottom-blue"></div>
+    <div id="top-block-container" class="block-continer">
+      <div class="block"></div>
+      <div class="block"></div>
+    </div>
+    <div id="bottom-block-container" class="block-continer">
+      <div class="block"></div>
+      <div class="block"></div>
+    </div>
   </body>
 </html>
